@@ -115,7 +115,8 @@ class Accounts
 
         $accounts = [];
         foreach ($results['data']['acct'] as $account) {
-            $accounts[] = Account::buildFromArray($account);
+            $accounts[] = $account;
+            //$accounts[] = Account::buildFromArray($account);
         }
 
         return [
