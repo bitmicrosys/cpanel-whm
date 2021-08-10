@@ -13,6 +13,6 @@ class Resellers
     }
     public function searchAccounts()
     {
-        return $this->client->sendRequest("/json-api/listaccts", "GET");
+        return $this->client->sendRequest("/json-api/listresellers", "GET");
     }
 }
